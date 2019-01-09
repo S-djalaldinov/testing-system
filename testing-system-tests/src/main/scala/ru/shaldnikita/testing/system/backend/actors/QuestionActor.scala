@@ -15,7 +15,7 @@ import ru.shaldnikita.testing.system.backend.messages.question.{
 object QuestionActor {
   def props(question: Question) = Props(new QuestionActor(question))
 
-  def name(question: Question) = s"question-${question.questionText}"
+  def name(question: Question) = s"question-${question.id}"
 }
 
 class QuestionActor(question: Question) extends Actor with ActorLogging {

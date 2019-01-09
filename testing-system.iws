@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0a65960-8cc1-4bef-978b-95caf40f4a67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/AnswerAlreadySelectedException.scala" afterDir="false" />
+    <list default="true" id="d0a65960-8cc1-4bef-978b-95caf40f4a67" name="Default Changelist" comment="добави">
+      <change afterPath="$PROJECT_DIR$/testing-system-backend/src/main/resources/questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionsStorageActor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsResponse.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriterActor.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/ActiveTestExistsException.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/ActiveTestExistsException.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/InvalidAnswerException.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/InvalidAnswerException.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/NoActiveTestException.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/NoActiveTestException.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/GetCurrentAnswer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerRequest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/test/java/ru/shaldnikita/testing/system/backend/actors/QuestionActorTests.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/test/java/ru/shaldnikita/testing/system/backend/actors/QuestionActorTests.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing-system.iws" beforeDir="false" afterPath="$PROJECT_DIR$/testing-system.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="203">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="e#54#100#0" expanded="true" />
               </folding>
@@ -39,43 +40,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/AnswerAlreadySelectedException.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/InvalidAnswerException.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" selection-start-line="7" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/ActiveTestExistsException.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/NoActiveTestException.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriter.scala">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriterActor.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
               <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
@@ -87,40 +52,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+            <state relative-caret-position="290">
+              <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
               <folding>
-                <element signature="e#54#173#0" expanded="true" />
+                <element signature="e#54#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/resources/questions.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21573" selection-start-column="21573" selection-end-column="21573" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionsStorageActor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+              <folding>
+                <element signature="e#54#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerRequest.scala">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerResponse.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="260">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/SelectAnswer.scala">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsRequest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsResponse.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -159,12 +166,9 @@
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/StopTest.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriterActor.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/CreteTest.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/SelectAnswer.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswer.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/test/java/ru/shaldnikita/testing/system/backend/actors/StopSystemAfterAll.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/NotAllowedAnswerException.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/pom.xml" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/test/java/ru/shaldnikita/testing/system/backend/actors/QuestionActorTests.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/StopTest.scala" />
@@ -174,17 +178,26 @@
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/TestAlreadyStartedException.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/ActiveTestExistsException.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/NoActiveTestException.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Test.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/RestartTEst.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/RestartTest.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/SaveTest.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriter.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/ActiveTestExistsException.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/AnswerAlreadySelectedException.scala" />
-        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/GetCurrentAnswer.scala" />
         <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerRequest.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Test.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerResponse.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/SelectAnswer.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsResponse.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsRequest.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestsStorageActor.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/resources/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/testing-system-backend/src/main/resources/questions.txt" />
       </list>
     </option>
   </component>
@@ -275,63 +288,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="actors" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing-system" type="462c0819:PsiDirectoryNode" />
-              <item name="testing-system-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="actors" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing-system" type="462c0819:PsiDirectoryNode" />
-              <item name="testing-system-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="actors" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing-system" type="462c0819:PsiDirectoryNode" />
-              <item name="testing-system-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing-system" type="462c0819:PsiDirectoryNode" />
-              <item name="testing-system-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="messages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing-system" type="462c0819:PsiDirectoryNode" />
-              <item name="testing-system-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testing-system" type="b2602c69:ProjectViewProjectNode" />
@@ -382,6 +339,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.shaldnikita.testing.system.backend.actors" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.shaldnikita.testing.system.backend.actors" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="org.scalatest.FunSuite" />
     </key>
@@ -403,7 +363,7 @@
   </component>
   <component name="RunManager" selected="ScalaTest.QuestionActorTests.QuestionActor must set current answer when a SelectAnswer(Answer(&quot;Answer1&quot;)) is sent to it and hes`s available one">
     <configuration name="QuestionActorTests" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="testing-system-backend" />
+      <module name="testing-system-tests" />
       <setting name="path" value="ru.shaldnikita.testing.system.backend.actors.QuestionActorTests" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
@@ -420,7 +380,7 @@
       </method>
     </configuration>
     <configuration name="QuestionActorTests.Question must set current answer when a SelectAnswer(Answer(&quot;Answer1&quot;)) is sent to it and it`s available" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="testing-system-backend" />
+      <module name="testing-system-tests" />
       <setting name="path" value="ru.shaldnikita.testing.system.backend.actors.QuestionActorTests" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
@@ -438,7 +398,7 @@
       </method>
     </configuration>
     <configuration name="QuestionActorTests.QuestionActor must set current answer when a SelectAnswer(Answer(&quot;Answer1&quot;)) is sent to it and hes`s available one" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="testing-system-backend" />
+      <module name="testing-system-tests" />
       <setting name="path" value="ru.shaldnikita.testing.system.backend.actors.QuestionActorTests" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
@@ -456,7 +416,7 @@
       </method>
     </configuration>
     <configuration name="QuestionActorTests.QuestionActor must set current answer when a SelectAnswer(Answer(&quot;Answer1&quot;)) is sent to it and it`s available" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="testing-system-backend" />
+      <module name="testing-system-tests" />
       <setting name="path" value="ru.shaldnikita.testing.system.backend.actors.QuestionActorTests" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
@@ -493,7 +453,7 @@
       <option name="presentableId" value="Default" />
       <updated>1546973436374</updated>
       <workItem from="1546973439787" duration="9157000" />
-      <workItem from="1547060610457" duration="5239000" />
+      <workItem from="1547060610457" duration="7106000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил TestActor с логикой, а так же DatabaseWriterActor">
       <created>1547065084475</created>
@@ -502,7 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547065084475</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Закончил с QuestionActor">
+      <created>1547066108272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547066108272</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Сделал case-классы final">
+      <created>1547066237976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547066237976</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -538,10 +512,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14396000" />
+    <option name="totallyTimeSpent" value="16263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -580,7 +555,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил TestActor с логикой, а так же DatabaseWriterActor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил TestActor с логикой, а так же DatabaseWriterActor" />
+    <MESSAGE value="Закончил с QuestionActor" />
+    <MESSAGE value="Сделал case-классы final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал case-классы final" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-stream_2.12/2.5.19/akka-stream_2.12-2.5.19.jar!/akka/stream/ActorMaterializer.class">
@@ -691,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="99" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7-sources.jar!/scala/collection/immutable/List.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -714,16 +684,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/StartTest.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -760,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Test.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/test/RestartTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -795,34 +748,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala">
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerRequest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="40">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/SelectAnswer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/NoActiveTestException.scala">
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerResponse.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriter.scala">
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/InvalidAnswerException.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#54#100#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -833,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
-          <folding>
-            <element signature="e#54#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/AnswerAlreadySelectedException.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -850,27 +790,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/question/InvalidAnswerException.scala">
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="11" />
+        <state relative-caret-position="100">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/exceptions/test/NoActiveTestException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="203">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="e#54#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/question/CurrentAnswerRequest.scala">
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/DatabaseWriterActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="203">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#54#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsRequest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/entities/Question.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/QuestionsStorageActor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="e#54#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestingSystemSupervisor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/messages/RandomQuestionsResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/resources/scriptFile.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/scala/ru/shaldnikita/testing/system/backend/actors/TestActor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+          <folding>
+            <element signature="e#54#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing-system-backend/src/main/resources/questions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21573" selection-start-column="21573" selection-end-column="21573" />
         </state>
       </provider>
     </entry>
@@ -940,6 +958,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.typesafe.akka:akka-actor_2.12:2.5.19</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="testing-system-backend" />
+        <module name="testing-system-questions" />
+        <module name="testing-system-tests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="testing-system" target="1.5" />
-      <module name="testing-system-backend" target="1.5" />
+      <module name="testing-system-questions" target="1.5" />
+      <module name="testing-system-tests" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
@@ -29,6 +31,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testing-system-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/testing-system-questions/pom.xml" />
       </list>
     </option>
   </component>
@@ -198,7 +201,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/testing-system.iml" filepath="$PROJECT_DIR$/testing-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testing-system-backend/testing-system-backend.iml" filepath="$PROJECT_DIR$/testing-system-backend/testing-system-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing-system-questions/testing-system-questions.iml" filepath="$PROJECT_DIR$/testing-system-questions/testing-system-questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing-system-tests/testing-system-tests.iml" filepath="$PROJECT_DIR$/testing-system-tests/testing-system-tests.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -6,14 +6,14 @@ import ru.shaldnikita.testing.system.backend.messages.test.{
   StartTest
 }
 
-object DatabaseWriter {
-  def props(databaseUrl: String) = Props(new DatabaseWriter(databaseUrl))
+object DatabaseWriterActor {
+  def props(databaseUrl: String) = Props(new DatabaseWriterActor(databaseUrl))
 
   def name(databaseUrl: String) =
     s"""db-writer-${databaseUrl.split("/").last}"""
 }
 
-class DatabaseWriter(databaseUrl: String) extends Actor with ActorLogging {
+class DatabaseWriterActor(databaseUrl: String) extends Actor with ActorLogging {
   override def receive: Receive = {
     case StartTest(studentId)  => startTest(studentId)
     case FinishTest(studentId) => finishTest(studentId)
