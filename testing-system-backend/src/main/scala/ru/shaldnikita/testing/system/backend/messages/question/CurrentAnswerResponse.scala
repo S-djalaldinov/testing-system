@@ -5,4 +5,4 @@ import ru.shaldnikita.testing.system.backend.entities.Answer
 /**
   * @author Nikita Shaldenkov
   */
-case class CurrentAnswerResponse(answer: Option[Answer])
+final case class CurrentAnswerResponse(answer: Option[Answer])

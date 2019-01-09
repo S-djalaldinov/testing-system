@@ -3,7 +3,4 @@ package ru.shaldnikita.testing.system.backend.entities
 /**
   * @author Nikita Shaldenkov
   */
-
-case class Test {
-
-}
+final case class Test(questions: List[Question])
