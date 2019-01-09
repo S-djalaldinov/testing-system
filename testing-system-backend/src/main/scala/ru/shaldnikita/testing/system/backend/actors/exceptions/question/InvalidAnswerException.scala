@@ -1,4 +1,4 @@
-package ru.shaldnikita.testing.system.backend.actors.exceptions
+package ru.shaldnikita.testing.system.backend.actors.exceptions.question
 
 import ru.shaldnikita.testing.system.backend.entities.Answer
 

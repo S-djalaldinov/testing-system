@@ -11,7 +11,7 @@ import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.{Matchers, WordSpecLike}
 import ru.shaldnikita.testing.system.backend.actors.QuestionActorTests._
 import ru.shaldnikita.testing.system.backend.entities.{Answer, Question}
-import ru.shaldnikita.testing.system.backend.messages.question.{GetCurrentAnswer, SelectAnswer}
+import ru.shaldnikita.testing.system.backend.messages.question.{CurrentAnswerRequest, SelectAnswer}
 
 class QuestionActorTests extends TestKit(testSystem)
   with WordSpecLike
@@ -31,7 +31,7 @@ class QuestionActorTests extends TestKit(testSystem)
       val selectedAnswer = testQuestion.availableAnswers.head
 
       questionActor ! SelectAnswer(selectedAnswer)
-      val current = (questionActor ? GetCurrentAnswer).mapTo[Option[Answer]].futureValue
+      val current = (questionActor ? CurrentAnswerRequest).mapTo[Option[Answer]].futureValue
       current shouldEqual Some(selectedAnswer)
     }
   }

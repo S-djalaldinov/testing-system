@@ -1,10 +1,14 @@
 package ru.shaldnikita.testing.system.backend.actors
 
 import akka.actor.{Actor, ActorLogging, Props}
-import ru.shaldnikita.testing.system.backend.actors.exceptions.InvalidAnswerException
+import ru.shaldnikita.testing.system.backend.actors.exceptions.question.{
+  AnswerAlreadySelectedException,
+  InvalidAnswerException
+}
 import ru.shaldnikita.testing.system.backend.entities.{Answer, Question}
 import ru.shaldnikita.testing.system.backend.messages.question.{
-  GetCurrentAnswer,
+  CurrentAnswerRequest,
+  CurrentAnswerResponse,
   SelectAnswer
 }
 
@@ -15,16 +19,24 @@ object QuestionActor {
 }
 
 class QuestionActor(question: Question) extends Actor with ActorLogging {
-  var selectedAnswer: Option[Answer] = None
 
-  override def receive: Receive = {
+  override def receive: Receive = onMessage(None)
+
+  private def onMessage(selectedAnswer: Option[Answer]): Receive = {
+
     case SelectAnswer(answer) =>
-      if (question.availableAnswers.contains(answer)) {
-        this.selectedAnswer = Some(answer)
-        log.debug(s"Selected $answer")
-      } else throw new InvalidAnswerException(answer)
+      selectedAnswer.map(a => throw new AnswerAlreadySelectedException(a))
+      selectAnswer(answer)
 
-    //TODO replace with message type instead of entity
-    case GetCurrentAnswer => sender() ! selectedAnswer
+    case CurrentAnswerRequest =>
+      sender() ! CurrentAnswerResponse(selectedAnswer)
   }
+
+  def selectAnswer(answer: Answer): Unit = {
+    if (question.availableAnswers.contains(answer)) {
+      context.become(onMessage(Some(answer)))
+      log.debug(s"Selected $answer")
+    } else throw new InvalidAnswerException(answer)
+  }
+
 }
