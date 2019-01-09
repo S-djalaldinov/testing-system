@@ -3,7 +3,10 @@ package ru.shaldnikita.testing.system.backend.actors
 import akka.actor.{Actor, ActorLogging, Props}
 import ru.shaldnikita.testing.system.backend.actors.exceptions.InvalidAnswerException
 import ru.shaldnikita.testing.system.backend.entities.{Answer, Question}
-import ru.shaldnikita.testing.system.backend.messages.question.{GetCurrentAnswer, SelectAnswer}
+import ru.shaldnikita.testing.system.backend.messages.question.{
+  GetCurrentAnswer,
+  SelectAnswer
+}
 
 object QuestionActor {
   def props(question: Question) = Props(new QuestionActor(question))
@@ -19,8 +22,7 @@ class QuestionActor(question: Question) extends Actor with ActorLogging {
       if (question.availableAnswers.contains(answer)) {
         this.selectedAnswer = Some(answer)
         log.debug(s"Selected $answer")
-      }
-      else throw new InvalidAnswerException(answer)
+      } else throw new InvalidAnswerException(answer)
 
     //TODO replace with message type instead of entity
     case GetCurrentAnswer => sender() ! selectedAnswer
